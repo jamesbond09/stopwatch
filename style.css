@@ -1,0 +1,70 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    color: #444;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D9AFD9;
+background-image: linear-gradient(45deg, #D9AFD9 0%, #97D9E1 100%);
+
+}
+.container{
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 60rem;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    border-radius: 15px;
+}
+h1{
+    font-size: 4rem;
+    text-shadow: 3px 3px 20px #D9AFD9,
+    -2px 1px 30px #97D9E1;
+    letter-spacing: 1px;
+}
+.stopwatch{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.buttons{
+    display: flex;
+    gap: 3rem;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    color: inherit;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    background: rgba( 255, 255, 255, 0.2 );
+    border-radius: 15px;
+    transition: .4s;
+}
+.start:hover{
+    background: rgba(48, 231, 7, 0.3); 
+}
+.pause:hover{
+    background: rgba(246, 246, 55, 0.3); 
+}
+.reset:hover{
+    background: rgba(250, 55, 26, 0.3); 
+}
